@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# YouTube Clone App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The YouTube Clone App is an interactive and responsive web application that emulates the core features of YouTube. Users can search for videos, explore trending topics, and watch videos seamlessly without leaving the current page by hovering over the video thumbnail. They can also watch the video in a standalone video page, which has video suggestions beside the played video. The app integrates with the YouTube API for video retrieval and is built using React, Material-UI, Axios, React Player, and React Router. It is designed to be fully mobile-responsive, providing a seamless viewing experience on all devices.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Video Search**: Users can search for videos using the search bar.
+- **Trending Videos**: Users can explore trending videos.
+- **Seamless Video Playback**: Users can watch videos without leaving the current page by hovering over the video thumbnail.
+- **Video Suggestions**: When watching a video in the standalone video page, users can see video suggestions beside the played video.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Material-UI
+- **API Integration**: Axios
+- **Video Playback**: React Player
+- **Routing**: React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run the app locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/Mohamed-Samahi/youtube-clone.git
+    ```
 
-### `npm run build`
+2. **Navigate to the root directory and install dependencies**:
+    ```sh
+    cd youtube-clone
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Set up the Environment Variables**:
+    - Create a `.env` file in the root directory of the project.
+    - Add the following environment variables to the `.env` file:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      - `REACT_APP_X_RAPID_API_KEY`: Your RapidAPI key for accessing the YouTube API.
+      - `REACT_APP_X_RAPID_API_HOST`: The host for the RapidAPI service (e.g., `youtube-v31.p.rapidapi.com`).
+      - `BASE_URL`: The base URL for the YouTube API (e.g., `https://youtube-v31.p.rapidapi.com`).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Example `.env` file:
+    ```env
+    REACT_APP_X_RAPID_API_KEY=your_rapidapi_key_here
+    REACT_APP_X_RAPID_API_HOST=youtube-v31.p.rapidapi.com
+    BASE_URL=https://youtube-v31.p.rapidapi.com
+    ```
 
-### `npm run eject`
+4. **Run the app**:
+    ```sh
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Search for Videos**: Enter a search query in the search bar to search for videos.
+2. **Explore Trending Videos**: Click on the "Trending" tab to explore trending videos.
+3. **Watch Videos**: Hover over a video thumbnail to watch the video without leaving the current page.
+4. **View Video Suggestions**: When watching a video in the standalone video page, view video suggestions beside the played video.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Live Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+View the live demo [here](https://youtube-clone-mohamed-samahi.vercel.app/).
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For any questions or feedback, please open an issue on GitHub or contact me at [mohamedsamahi.work@gmail.com](mailto:mohamedsamahi.work@gmail.com).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## More Projects
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more projects, visit my portfolio at [https://mohamed-samahi.vercel.app/](https://mohamed-samahi.vercel.app/).
