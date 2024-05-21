@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://youtube-v31.p.rapidapi.com";
+const BASE_URL = process.env.BASE_URL;
 
 const options = {
   method: "GET",
@@ -9,8 +9,8 @@ const options = {
   },
   headers: {
     // "content-type": "application/octet-stream",
-    "X-RapidAPI-Key": "7c99fbc014msh217fcde312db0b4p169670jsn2f8bcbe1eb21",
-    "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+    "X-RapidAPI-Key": process.env.REACT_APP_X_RAPID_API_KEY,
+    "X-RapidAPI-Host": process.env.REACT_APP_X_RAPID_API_HOST,
   },
 };
 
